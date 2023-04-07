@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Underwater Team Bingo Sign Up</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <h1>Underwater Team Bingo Sign Up</h1>
+    <form id="signup-form">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="phone" name="phone" required>
+      </div>
+      <div class="mb-3">
+        <label for="credit" class="form-label">Credit Card Number</label>
+        <input type="text" class="form-control" id="credit" name="credit" required>
+      </div>
+      <div class="mb-3">
+        <label for="ssn" class="form-label">Social Security Number</label>
+        <input type="text" class="form-control" id="ssn" name="ssn" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <div class="input-group">
+          <input type="password" class="form-control" id="password" name="password" required>
+          <button class="btn btn-outline-secondary" type="button" id="show-password-btn">Show</button>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="date-time" class="form-label">Preferred Date and Time</label>
+        <input type="datetime-local" class="form-control" id="date-time" name="date-time" required>
+      </div>
+      <div class="mb-3">
+        <label for="skill-level" class="form-label">Skill Level</label>
+        <select class="form-select" id="skill-level" name="skill-level" required>
+          <option value="" disabled selected>Select skill level</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label class="form-check-label">Equipment Required</label>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="mask" name="mask">
+          <label for="mask" class="form-check-label">Mask</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="fins" name="fins">
+          <label for="fins" class="form-check-label">Fins</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="wetsuit" name="wetsuit">
+          <label for="wetsuit" class="form-check-label">Wetsuit</label>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="form-check-label">How did you hear about us?</label>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="word-of-mouth" name="referral" value="word-of-mouth">
+          <label for="word-of-mouth" class="form-check-label">Word of mouth</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="online-search" name="referral" value="online-search">
+          <label for="online-search" class="form-check-label">Online search</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="social-media" name="referral" value="social-media">
+          <label for="social-media" class="form-check-label">Social media</label>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="comments" class="form-label">Comments</label>
+        <textarea class="form-control" id="comments" name="comments" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="reset" class="btn btn-secondary">Clear</button>
+    </form>
+
+  </div>
+
+</body>
+
+</html>
