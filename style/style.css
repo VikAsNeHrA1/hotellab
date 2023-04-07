@@ -1,1 +1,27 @@
 
+/* Footer section styling */
+
+footer {
+  
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto;
+    background-color: black;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
